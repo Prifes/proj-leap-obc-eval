@@ -19,7 +19,7 @@
  endif()
  target_compile_options(target_platform INTERFACE
  	# Header for your specific MCU
- 	-include stm32f4xx.h 
+ 	-include stm32l4xx.h 
  )
 
  add_library(board_config STATIC)
