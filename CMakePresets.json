@@ -1,0 +1,27 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "default",
+            "hidden": true,
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {}
+        },
+        {
+            "name": "NUCLEO-L4A6ZG",
+            "inherits": "default",
+            "toolchainFile": "${sourceDir}/01_Hardware/NUCLEO-L4A6ZG/cmake/gcc-arm-none-eabi.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "BOARD_NAME": "NUCLEO-L4A6ZG"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "NUCLEO-L4A6ZG",
+            "configurePreset": "NUCLEO-L4A6ZG"
+        }
+    ]
+}
