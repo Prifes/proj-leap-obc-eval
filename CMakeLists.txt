@@ -8,7 +8,7 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_SCAN_FOR_MODULES OFF)
 
 # Include board configuration
-add_subdirectory(01_Hardware/${BOARD_NAME})
+add_subdirectory(board/${BOARD_NAME})
 
 add_executable(${PROJECT_NAME})
 

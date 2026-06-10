@@ -11,10 +11,19 @@
         {
             "name": "NUCLEO-L4A6ZG",
             "inherits": "default",
-            "toolchainFile": "${sourceDir}/01_Hardware/NUCLEO-L4A6ZG/cmake/gcc-arm-none-eabi.cmake",
+            "toolchainFile": "${sourceDir}/board/NUCLEO-L4A6ZG/cmake/gcc-arm-none-eabi.cmake",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug",
                 "BOARD_NAME": "NUCLEO-L4A6ZG"
+            }
+        },
+        {
+            "name": "OBC-PROTO",
+            "inherits": "default",
+            "toolchainFile": "${sourceDir}/board/OBC-PROTO/cmake/gcc-arm-none-eabi.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "BOARD_NAME": "OBC-PROTO"
             }
         }
     ],
@@ -22,6 +31,10 @@
         {
             "name": "NUCLEO-L4A6ZG",
             "configurePreset": "NUCLEO-L4A6ZG"
+        },
+        {
+            "name": "OBC-PROTO",
+            "configurePreset": "OBC-PROTO"
         }
     ]
 }
